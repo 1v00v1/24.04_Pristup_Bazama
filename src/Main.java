@@ -14,7 +14,7 @@ public class Main {
             System.out.println("Uspješno ste spojeni na bazu podataka");
 
             Statement st = connection.createStatement();
-            int rowAffected = st.executeUpdate("UPDATE Drzava SET Naziv ='Croatia' WHERE IDDrzava=1");
+            int rowAffected = st.executeUpdate("UPDATE Drzava SET Naziv ='Hrvatska' WHERE IDDrzava=1");
             System.out.println("Drzava je uspješno preimenovana");
             st.execute("INSERT INTO  Drzava VALUES ('test')") ;
             st.execute("SELECT * FROM Drzava WHERE Naziv ='test'");
